@@ -1,7 +1,15 @@
-/* =========  Global Theme  ========= */
+/* =========  Global theme — minimalist, recruiter-friendly  ========= */
 :root {
-  /* Change this one value and the whole accent updates */
-  --accent-color: #1e90ff; /* ← your accent here */
+  --accent: #0d7377;
+  --accent-hover: #095456;
+  --text: #1a1a1a;
+  --text-muted: #5c5c5c;
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --border: #e8e8e8;
+  --max-width: 720px;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
 }
 
 * {
@@ -10,11 +18,52 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Times New Roman", Times, serif;
-  color: #000;
-  background: #fff;
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+/* ===== Typography  ===== */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
 }
 
 /* ===== Header  ===== */
@@ -22,31 +71,253 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid var(--accent-color);
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .site-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+header .site-title:hover {
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  gap: 1.75rem;
 }
 
 nav a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: var(--accent-color);
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
-/* ===== Sections  ===== */
-section {
-  padding: 4rem 2rem;
+nav a:hover {
+  color: var(--accent);
 }
 
-#skills ul {
-  list-style: disc;
-  margin-left: 1.5rem;
+/* ===== Page layout  ===== */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
-/* ===== Timeline  ===== */
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* ===== Landing hero  ===== */
+.hero {
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero .cta {
+  display: inline-flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero .cta a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.hero .cta .primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero .cta .primary:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.hero .cta .secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.hero .cta .secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===== About  ===== */
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.about-section li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.about-section li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.focus-tags span {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.contact-inline {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.contact-inline a {
+  margin-right: 1rem;
+}
+
+/* ===== Resume embed  ===== */
+.resume-embed-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.resume-embed-wrap embed,
+.resume-embed-wrap iframe {
+  width: 100%;
+  height: 85vh;
+  min-height: 700px;
+  border: 0;
+}
+
+.resume-download {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* ===== Portfolio sections  ===== */
+.portfolio-section {
+  margin-bottom: 3rem;
+}
+
+.portfolio-section h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(13, 115, 119, 0.08);
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  background: var(--border);
+}
+
+.project-card .card-body {
+  padding: 1rem;
+}
+
+.project-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-card p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ===== Timeline (about/experience)  ===== */
 .timeline {
   position: relative;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .timeline::before {
@@ -56,53 +327,65 @@ section {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--accent-color);
+  background: var(--border);
+  border-radius: 1px;
 }
 
 .timeline-item {
   position: relative;
-  padding: 1rem 0 1rem 2rem;
+  padding: 0 0 1.25rem 1.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -6px;
-  top: 1.2rem;
-  width: 12px;
-  height: 12px;
-  background: var(--accent-color);
+  left: -5px;
+  top: 0.35rem;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
   border-radius: 50%;
 }
 
-/* ===== Project Grid  ===== */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+.timeline-item h3 {
+  margin-bottom: 0.2rem;
 }
 
-.project-card {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
+.timeline-item .meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
 }
 
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.75rem;
+.timeline-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 /* ===== Responsive  ===== */
 @media (max-width: 600px) {
-  nav {
-    display: block;
-    text-align: center;
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
+
+  nav {
+    gap: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
+
+/* Optional: DM Sans from Google Fonts — add in HTML if desired */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap");

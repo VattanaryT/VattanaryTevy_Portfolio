@@ -1,26 +1,22 @@
-# Engineering Portfolio Template
+# Engineering Portfolio
 
-This repo is a clean, minimalist portfolio site built with nothing more than HTML, CSS, and a touch of vanilla JS. It’s designed so that any engineer can fork the repo, drop in their own content, and publish straight to GitHub Pages—no build tools required.
+A minimalist, recruiter-friendly portfolio site (HTML, CSS, vanilla JS). Pages: **About**, **Portfolio**, **Resume**.
 
-## 🏁 Quick Start
-1. **Fork / Use this template** ➜ create your repo.
-2. Edit `index.html`:
-   * Contact info (Contact section)
-   * About blurb
-   * `ul` in Skills section
-   * Timeline items (`div.timeline-item`)
-3. Add projects:
-   * Duplicate `projects/sample-project.html` ➜ rename & edit.
-   * Drop a headline image in `assets/img/`.
-   * Add a matching card inside the `div.project-grid` in `index.html`.
-4. Replace `resume/placeholder_resume.pdf` with your résumé file (keep the filename or update the `<embed>` path).
-5. Change the accent color in `assets/css/style.css` by updating `--accent-color`.
-6. Push to `main`, then in **Settings ▶ Pages** select the `main` branch.
+## Quick start
 
-That’s it—your portfolio is live! ✨
+1. **Resume** — Replace `resume/placeholder_resume.pdf` with your own PDF (e.g. copy your `Profile.pdf` into `resume/` and update the filename in `resume.html` and the download link if you use a different name).
+2. **Portfolio** — Edit `portfolio.html` to add real project images (replace the `placehold.co` URLs with paths to your images in e.g. `assets/img/`) and add or remove project cards.
+3. **About** — Tweak `about.html` and `index.html` as needed (contact, focus areas, education).
+4. **Theme** — Change the accent color in `assets/css/style.css` via `--accent` (default `#0d7377`).
+5. **Publish** — Push to `main` and in **Settings → Pages** select the `main` branch (e.g. GitHub Pages).
 
-## 📂 Adding More Timeline Entries
-Each entry is a `.timeline-item` inside the Experience section. Copy‑paste the block, change the dates, description, and link.
+## Structure
 
-## 📄 License
+- `index.html` — Landing (name, tagline, links to About / Portfolio / Resume)
+- `about.html` — Summary, focus areas, skills, certifications, education, contact
+- `portfolio.html` — Project sections with placeholder images (Robotics & RL, ML & Data Science, Automation & Mechatronics, Mechanical Design)
+- `resume.html` — Embedded PDF + download link
+
+## License
+
 MIT
