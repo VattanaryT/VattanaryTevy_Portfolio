@@ -104,9 +104,15 @@
           <p class="project-block-role">Robotics & RL Research</p>
         </div>
       </div>
-      <div class="project-block-visuals img-1">
+      <div class="project-block-visuals img-2">
         <img src="assets/img/geodude_teleop.png" alt="Teleop demonstration" />
+        <video src="assets/img/right_wrist.mp4" muted playsinline loop autoplay></video>
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Implement and evaluate imitation learning and RL-based control policies for dexterous robotic manipulation (carbon fiber layup tasks) using ROS2 in Linux and Hugging Face’s LeRobot.</li>
+        <li><strong>Result:</strong> Own data collection pipeline design, model training, evaluation benchmarking, and closed-loop hardware testing.</li>
+        <li><strong>How:</strong> Collect and process multimodal teleoperation demonstration data (position, force, contact) for policy training; implement rapid experiment cycles to identify failure modes, iterate on model architectures, and characterize sim-to-real transfer performance.</li>
+      </ul>
       <p class="project-block-caption">Embodied AI, robotics, and reinforcement learning.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>RL</span><span>Robotics</span><span>Teleop</span></span>
@@ -125,6 +131,11 @@
       <div class="project-block-visuals img-1">
         <img src="assets/img/powerlight_setup.jpg" alt="PV test setup" />
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Manual testing bottleneck caused throughput losses and data inconsistencies.</li>
+        <li><strong>Result:</strong> End-to-end automated PV test system—eliminated manual steps, enabled continuous unattended runs; integrated into PLM/BOM, faster validation.</li>
+        <li><strong>How:</strong> Independently scoped, designed, and deployed from hardware selection through software commissioning.</li>
+      </ul>
       <p class="project-block-caption">High-speed cameras, InGaAs spectrometer, data-acquisition, PyQt GUI.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>PyQt</span><span>DAQ</span><span>Automation</span></span>
@@ -145,6 +156,11 @@
         <video src="assets/img/mara_demo.MOV" muted playsinline loop autoplay></video>
         <img src="assets/img/mara_workflow.png" alt="MARA workflow" />
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Manual measurement bottleneck in a self-driving materials lab.</li>
+        <li><strong>Result:</strong> Real-time computer vision pipeline for closed-loop concentration monitoring; replaced manual spot-checks and accelerated materials discovery.</li>
+        <li><strong>How:</strong> Collaborated with chemists and engineers to validate performance and drive adoption into active deposition workflows.</li>
+      </ul>
       <p class="project-block-caption">LHS (96 samples), CV for first iteration, automation & color concentration pipeline.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>ML</span><span>Opentrons</span><span>Computer Vision</span></span>
@@ -165,6 +181,11 @@
         <img src="assets/img/paus_partial_cad.png" alt="PAUS partial CAD" />
         <img src="assets/img/paus_system.png" alt="PAUS system" />
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Partnered with GE HealthCare to deliver a novel photoacoustic-ultrasound scanner.</li>
+        <li><strong>Result:</strong> Concept through validated prototype; resolved laser-timing jitter at 1000 Hz, met clinical-grade targets; SPIE publication.</li>
+        <li><strong>How:</strong> Scoped requirements, designed and 3D-printed custom optical/mechanical subsystems; pulse synchronization mechanism validated through iterative subsystem testing.</li>
+      </ul>
       <p class="project-block-caption">Python API/GUI, CAD (power supply, cable clips). PSO trigger: Aerotech motor, 17400 deg/s, laser pulses for photoacoustic + ultrasound.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>Python</span><span>CAD</span><span>Aerotech</span><span>Photoacoustic</span></span>
@@ -185,6 +206,11 @@
         <img src="assets/img/tbm_site.png" alt="TBM site" />
         <img src="assets/img/tbm_site2.png" alt="TBM site" />
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Directed 5 subteams (45+ members) and $20K budget to deliver a first-of-a-kind tunneling system against a fixed national competition deadline.</li>
+        <li><strong>Result:</strong> Won Cutterhead Mini-Competition; passed all mechanical, electrical, and software inspections.</li>
+        <li><strong>How:</strong> Structured workstreams and milestones; diagnosed ME/EE/SW integration failures with root-cause analysis; primary liaison to The Boring Company—translated requirements into design constraints.</li>
+      </ul>
       <p class="project-block-caption">Tunneling club controls and site systems.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>Controls</span><span>ESP32</span></span>
@@ -204,6 +230,11 @@
         <img src="assets/img/curved_cad.png" alt="Curved probe CAD" />
         <video src="assets/img/curved_probe.MOV" muted playsinline loop autoplay></video>
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Scan artifacts in Boeing composite inspection workflows.</li>
+        <li><strong>Result:</strong> Identified two root causes via FFT-based analysis; novel two-curve probe geometry and fixture redesign (40% better water retention)—improved defect detection and SNR.</li>
+        <li><strong>How:</strong> FFT-based signal analysis; curved probe for laser line scanner and water column; Boustrophedon path planning (IN/OUT events, DFS).</li>
+      </ul>
       <p class="project-block-caption">Curved probe: laser line scanner, water column, robot path planning. Path planning: Boustrophedon decomposition, IN/OUT events, DFS.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>SolidWorks</span><span>Path Planning</span><span>FFT</span></span>
@@ -224,6 +255,11 @@
         <img src="assets/img/landing_gear_adapter.png" alt="Landing gear adapter" />
         <img src="assets/img/dbf_fuselage_landing_gear.png" alt="Fuselage and landing gear" />
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Led landing gear design for the team’s RC plane.</li>
+        <li><strong>Result:</strong> Fully-removable one-piece gear meeting constraints and FOM; fuselage/spar integration and canopy pin locks (pins non–load bearing).</li>
+        <li><strong>How:</strong> Evaluated and rejected retracts and sliding pins; CAD and FEA; gear housed in fuselage under wing spar with mount and pin locks.</li>
+      </ul>
       <p class="project-block-caption">Fully-removable one-piece gear; fuselage/wing spar; canopy pin locks (pins non–load bearing). Options rejected: retracts, sliding pins.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>CAD</span><span>FEA</span><span>Carbon</span></span>
@@ -243,6 +279,11 @@
         <video src="assets/img/ide_vs_anti_sway.MOV" muted playsinline loop autoplay></video>
         <video src="assets/img/tracking_mode.mp4" muted playsinline loop autoplay></video>
       </div>
+      <ul class="project-block-bullets">
+        <li><strong>What:</strong> Mechatronics project implementing anti-sway control for a crane/load system.</li>
+        <li><strong>Result:</strong> Comparison of tracking vs idle vs anti-sway mode; validated via torsion test, beam bending, and motor speed characterization.</li>
+        <li><strong>How:</strong> System block diagram (sensors, controller, actuators); manufacturing; BOM and Gantt for project management.</li>
+      </ul>
       <p class="project-block-caption">Tracking vs anti-sway mode. Block diagram, manufacturing, torsion test, beam bending, motor speed. BOM & Gantt.</p>
       <div class="project-block-footer">
         <span class="project-block-tags"><span>Control Systems</span><span>Mechatronics</span></span>

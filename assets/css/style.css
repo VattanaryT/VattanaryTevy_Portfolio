@@ -415,6 +415,24 @@ main {
   background: var(--border);
 }
 
+.project-block-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.project-block-bullets li {
+  margin-bottom: 0.35rem;
+  padding-left: 0;
+}
+
+.project-block-bullets li:last-child {
+  margin-bottom: 0;
+}
+
 .project-block-caption {
   font-size: 0.85rem;
   color: var(--text-muted);
