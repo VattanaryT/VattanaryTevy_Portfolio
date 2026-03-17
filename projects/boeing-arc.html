@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boeing ARC — Vattanary Tevy</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="project-page">
+  <header>
+    <a href="../index.html" class="site-title">Vattanary Tevy</a>
+    <nav>
+      <a href="../resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-hero">
+      <h1>Boeing Advanced Research Center (BARC)</h1>
+      <p class="role">Research Assistant</p>
+    </div>
+
+    <div class="gallery">
+      <img src="https://placehold.co/800x500/e8e8e8/5c5c5c?text=Curved+Probe+Design" alt="Curved probe — laser line scanner, water column" />
+      <img src="https://placehold.co/800x500/e8e8e8/5c5c5c?text=Boustrophedon+Cells" alt="Path planning cells and pointers" />
+      <img src="https://placehold.co/800x500/e8e8e8/5c5c5c?text=DFS+Path" alt="Depth-first search path through cells" />
+    </div>
+
+    <section class="detail-section">
+      <h2>Overview</h2>
+      <p>Research at BARC included mechanical design of a curved probe end-effector for complex composite scans and algorithm development for robot path planning (Boustrophedon decomposition). FFT-based noise reduction for signal processing.</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>Curved probe design</h2>
+      <ul>
+        <li>Idea inspiration from current design; improved for laser line scanner, water column, and robot path planning</li>
+        <li>Compared with previous concepts (e.g. flat end effector) and iterated to final curved design</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Path planning — Boustrophedon decomposition</h2>
+      <ul>
+        <li>Identify obstacle coordinates to avoid</li>
+        <li>Use IN and OUT events (identified via ceiling and floor pointers), dividing the workspace into cells</li>
+        <li>Depth-first search to navigate through cells in a counterclockwise manner</li>
+      </ul>
+    </section>
+
+    <a href="../index.html#boeing-arc" class="back-link">← Maker portfolio</a>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

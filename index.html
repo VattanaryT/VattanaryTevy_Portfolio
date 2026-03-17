@@ -10,23 +10,232 @@
   <header>
     <a href="index.html" class="site-title">Vattanary Tevy</a>
     <nav>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
       <a href="resume.html">Resume</a>
     </nav>
   </header>
 
-  <main class="hero">
-    <h1>Vattanary Tevy</h1>
-    <p class="tagline">Robotics Reinforcement Learning Researcher · UW WEIRD Lab</p>
-    <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 32ch; margin-left: auto; margin-right: auto;">
-      I work on robotics, machine learning, and automation—from dexterous manipulation and RL to data pipelines and mechanical design.
-    </p>
-    <div class="cta">
-      <a href="about.html" class="primary">About me</a>
-      <a href="portfolio.html" class="secondary">View portfolio</a>
-      <a href="resume.html" class="secondary">Resume</a>
-    </div>
+  <main>
+    <section class="hero">
+      <img src="assets/img/headshot.jpg" alt="Vattanary Tevy" class="hero-headshot" />
+      <h1>Vattanary Tevy</h1>
+      <!-- <p class="tagline">Robotics Reinforcement Learning Researcher · UW WEIRD Lab</p> -->
+      <!-- <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 32ch; margin-left: auto; margin-right: auto;">
+        I work on robotics, machine learning, and automation; from dexterous manipulation and RL to data pipelines and mechanical design.
+      </p> -->
+      <div class="cta">
+        <a href="resume.html" class="primary">Resume</a>
+      </div>
+    </section>
+
+    <!-- <h2 class="page-title">About</h2>
+    <p class="page-subtitle">Robotics & ML · Data Science · Software & Mechanical Engineering</p> -->
+
+    <section class="about-section">
+      <h2>Summary</h2>
+      <ul>
+        <li>Robotics Reinforcement Learning Researcher at UW WEIRD Lab, working on RL for dexterous robots, carbon fiber layup, and teleoperation data for imitation learning</li>
+        <li>Expertise in robotics & RL, machine learning & data science, software (perception, data pipelines, automation), and mechanical design & mechatronics</li>
+        <li>Experience in self-driving labs, medical imaging systems, automation, and controls</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Focus areas</h2>
+      <div class="focus-tags">
+        <span>Robotics & RL</span>
+        <span>Machine Learning</span>
+        <span>Data Science</span>
+        <span>Control Systems</span>
+        <span>Software & Automation</span>
+        <span>Mechanical Design</span>
+        <span>Mechatronics</span>
+        <span>Computer Vision</span>
+      </div>
+    </section>
+
+    <!-- <section class="about-section">
+      <h2>Top skills</h2>
+      <ul>
+        <li>Control systems design</li>
+        <li>Technical writing</li>
+        <li>Deep learning</li>
+        <li>Reinforcement learning & imitation learning</li>
+        <li>Data pipelines & ML pipelines</li>
+        <li>Python, PyQt, CAD (SolidWorks), FEA</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Fundamentals of Engineering (FE exam)</li>
+        <li>Mechanical Design — SolidWorks Associate</li>
+        <li>Exploratory Data Analysis for Machine Learning</li>
+        <li>SQL</li>
+      </ul>
+    </section> -->
+
+    <section class="about-section">
+      <h2>Honors & awards</h2>
+      <p>Amazon Robotics Fellowship</p>
+    </section>
+
+    <section class="about-section">
+      <h2>Education</h2>
+      <p><strong>M.Eng. Mechanical Engineering</strong> — Data Science, Mechatronics · University of Washington · 2024–2026</p>
+      <p><strong>B.E. Mechanical Engineering</strong> — Mechatronics · University of Washington · 2022–2024</p>
+      <!-- <p><strong>Associate's in Engineering</strong> · Green River College · 2020–2022</p> -->
+    </section>
+
+    <section class="about-section">
+      <h2>Contact</h2>
+      <p class="contact-inline">
+        <a href="mailto:vtevy@uw.edu">vtevy@uw.edu</a>
+        <a href="https://www.linkedin.com/in/vattanary-tevy" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <!-- <p style="color: var(--text-muted); font-size: 0.9rem;">Seattle, Washington</p> -->
+    </section>
+
+    <h2 class="page-title">Maker Portfolio</h2>
+    <p class="page-subtitle">Projects across automation, mechatronics, controls, and mechanical design.</p>
+
+    <!-- 1. Powerlight Technologies -->
+    <article class="project-block" id="powerlight">
+      <div class="project-block-header">
+        <div>
+          <h3>Powerlight Technologies</h3>
+          <p class="project-block-role">PV testing & automation</p>
+        </div>
+      </div>
+      <div class="project-block-visuals img-2">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=PV+Test+Setup" alt="PV cell testing setup" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=PyQt+GUI" alt="Data acquisition GUI" />
+      </div>
+      <p class="project-block-caption">High-speed cameras, InGaAs spectrometer, data-acquisition, PyQt GUI.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>PyQt</span><span>DAQ</span><span>Automation</span></span>
+        <a href="projects/powerlight.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 2. UW Sun Lab -->
+    <article class="project-block" id="sun-lab">
+      <div class="project-block-header">
+        <div>
+          <h3>UW Sun Lab</h3>
+          <p class="project-block-role">Systems Engineering & ML Research Assistant</p>
+        </div>
+      </div>
+      <div class="project-block-visuals">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=LHS+Opentrons" alt="Latin Hypercube Sampling on Opentrons" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=CV+Iteration" alt="Computer vision for first iteration" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Comparison" alt="Iterations and batch size comparison" />
+      </div>
+      <p class="project-block-caption">LHS (96 samples), CV for first iteration, automation & color concentration pipeline.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>ML</span><span>Opentrons</span><span>Computer Vision</span></span>
+        <a href="projects/sun-lab.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 3. uWAMIT -->
+    <article class="project-block" id="uwamit">
+      <div class="project-block-header">
+        <div>
+          <h3>uWAMIT — Ultrasound-based Washington Molecular Imaging & Therapy</h3>
+          <p class="project-block-role">Mechatronics Research Assistant</p>
+        </div>
+      </div>
+      <div class="project-block-visuals">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Python+API+GUI" alt="Python API and GUI" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=CAD+Enclosure" alt="AC/DC power supply encasing and cable clips" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=PSO+Trigger" alt="PSO trigger for photoacoustic imaging" />
+      </div>
+      <p class="project-block-caption">Python API/GUI, CAD (power supply, cable clips). PSO trigger: Aerotech motor, 17400 deg/s, laser pulses for photoacoustic + ultrasound.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>Python</span><span>CAD</span><span>Aerotech</span><span>Photoacoustic</span></span>
+        <a href="projects/uwamit.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 4. Washington Hyperloop -->
+    <article class="project-block" id="hyperloop">
+      <div class="project-block-header">
+        <div>
+          <h3>Washington Hyperloop</h3>
+          <p class="project-block-role">Controls Engineer & Executive Director</p>
+        </div>
+      </div>
+      <div class="project-block-visuals img-2">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Figma+GUI" alt="6-page GUI design in Figma" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=E-stop+ESP32" alt="Emergency stop and manual start — relay, motor driver, ESP32" />
+      </div>
+      <p class="project-block-caption">GUI (Figma, 6 pages). E-stop + manual start: relay module, motor driver, ESP32 (C++).</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>Figma</span><span>ESP32</span><span>C++</span><span>Controls</span></span>
+        <a href="projects/washington-hyperloop.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 5. Boeing ARC -->
+    <article class="project-block" id="boeing-arc">
+      <div class="project-block-header">
+        <div>
+          <h3>Boeing Advanced Research Center (BARC)</h3>
+          <p class="project-block-role">Research Assistant</p>
+        </div>
+      </div>
+      <div class="project-block-visuals">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Curved+Probe" alt="Curved probe design — laser line scanner, water column" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Path+Planning" alt="Boustrophedon path planning" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Cells+DFS" alt="Cells, ceiling/floor pointers, DFS" />
+      </div>
+      <p class="project-block-caption">Curved probe: laser line scanner, water column, robot path planning. Path planning: Boustrophedon decomposition, IN/OUT events, DFS.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>SolidWorks</span><span>Path Planning</span><span>FFT</span></span>
+        <a href="projects/boeing-arc.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 6. Design Build Fly -->
+    <article class="project-block" id="dbf">
+      <div class="project-block-header">
+        <div>
+          <h3>Design Build Fly (DBF)</h3>
+          <p class="project-block-role">Landing Gear Lead</p>
+        </div>
+      </div>
+      <div class="project-block-visuals">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=RC+Plane" alt="RC plane reference" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Figures+of+Merit" alt="Design considerations" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Final+Landing+Gear" alt="Fully-removable one-piece landing gear" />
+      </div>
+      <p class="project-block-caption">Fully-removable one-piece gear; fuselage/wing spar; canopy pin locks (pins non–load bearing). Options rejected: retracts, sliding pins.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>CAD</span><span>FEA</span><span>Carbon</span></span>
+        <a href="projects/design-build-fly.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
+
+    <!-- 7. Anti-Sway Control -->
+    <article class="project-block" id="anti-sway">
+      <div class="project-block-header">
+        <div>
+          <h3>Anti-Sway Control</h3>
+          <p class="project-block-role">Mechatronics Project</p>
+        </div>
+      </div>
+      <div class="project-block-visuals">
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Project+Models" alt="System models" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Tracking+vs+Anti-Sway" alt="Idle vs anti-sway mode" />
+        <img src="https://placehold.co/600x400/e8e8e8/5c5c5c?text=Block+Diagram" alt="System block diagram and testing" />
+      </div>
+      <p class="project-block-caption">Tracking vs anti-sway mode. Block diagram, manufacturing, torsion test, beam bending, motor speed. BOM & Gantt.</p>
+      <div class="project-block-footer">
+        <span class="project-block-tags"><span>Control Systems</span><span>Mechatronics</span></span>
+        <a href="projects/anti-sway.html" class="project-block-link">Details →</a>
+      </div>
+    </article>
   </main>
 
   <script src="assets/js/main.js"></script>
