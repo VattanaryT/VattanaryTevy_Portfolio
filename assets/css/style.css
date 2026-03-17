@@ -397,12 +397,6 @@ main {
   display: block;
 }
 
-/* BARC: frame first image lower (show more of bottom) */
-.project-block-visuals.frame-low img:first-child {
-  object-fit: cover;
-  object-position: center 70%;
-}
-
 /* Single-image blocks: smaller so one image isn’t oversized */
 .project-block-visuals.img-1 img,
 .project-block-visuals.img-1 video {
