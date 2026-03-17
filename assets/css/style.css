@@ -386,13 +386,33 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.project-block-visuals img {
+.project-block-visuals img,
+.project-block-visuals video {
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
+}
+
+/* BARC: frame first image lower (show more of bottom) */
+.project-block-visuals.frame-low img:first-child {
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+/* Single-image blocks: smaller so one image isn’t oversized */
+.project-block-visuals.img-1 img,
+.project-block-visuals.img-1 video {
+  max-width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-block-visuals video {
+  background: var(--border);
 }
 
 .project-block-caption {
@@ -456,11 +476,27 @@ main {
   margin-bottom: 2rem;
 }
 
-.project-page .gallery img {
+.project-page .gallery img,
+.project-page .gallery video {
   width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
   border: 1px solid var(--border);
   display: block;
+}
+
+.project-page .gallery video {
+  background: var(--border);
+}
+
+/* Single-image gallery: slightly smaller */
+.project-page .gallery.gallery-single img,
+.project-page .gallery.gallery-single video {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-page .detail-section {
